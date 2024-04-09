@@ -5,10 +5,13 @@
     <title>Pseudo Class Selectors</title>
     <style>
     /* Styles go here. */
+
+      /*list in header*/
       header li {
         list-style: none;
       }
 
+      /*button preset*/
       header a {
         text-decoration: none;
         display: block;
@@ -17,20 +20,34 @@
         margin-bottom: 3px;
       }
 
-      a:link, a:visited{
+      /*before interact button*/
+      a:link, a:visited {
         background-color: green;
         border: 2px solid black;
         color: black;
       }
 
-      a:hover, a:active{
+      /*after hover or active*/
+      a:hover, a:active {
         background-color: blue;
         border: 2px solid white;
         color: white;
       }
-
-      header li:nth-child(3){
+      
+      /*third button*/
+      header li:nth-child(3) {
         font-size: 24px;
+      }
+
+      /*odd number place div in section*/
+      section div:nth-child(odd) {
+        background-color: gray;
+      }
+
+      /*4th div in section*/
+      section div:nth-child(4):hover {
+        background-color: blue;
+        cursor: pointer;
       }
 
     </style>
