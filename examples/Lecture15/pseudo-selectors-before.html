@@ -5,7 +5,30 @@
     <title>Pseudo Class Selectors</title>
     <style>
     /* Styles go here. */
+      header li {
+        list-style: none;
+      }
 
+      header a {
+        text-decoration: none;
+        display: block;
+        width: 200px;
+        text-align: center;
+        margin-bottom: 3px;
+      }
+
+      a:link, a:visited{
+        background-color: green;
+        border: 2px solid black;
+        color: black;
+      }
+
+      a:hover, a:active{
+        background-color: blue;
+        border: 2px solid white;
+        color: white;
+      }
+      }
 
     </style>
   </head>
@@ -14,7 +37,7 @@
 
     <header>
       <ul>
-        <li><a href="/">Home</a></li>
+        <li><a href="/" target="_blank">Home</a></li>
         <li><a href="http://goo.gl/V0Wl6s" target="_blank">AngularJS Course</a></li>
         <li><a href="http://www.facebook.com/CourseraWebDev" target="_blank">Facebook Fan Page</a></li>
       </ul>
