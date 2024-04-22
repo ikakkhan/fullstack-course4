@@ -42,3 +42,41 @@ body {
 .navbar-brand p span {/*kosher text*/
   vertical-align: middle;
 }
+
+#nav-list {
+  margin-top: 10px; 
+}
+#nav-list a {/*nav icon*/
+  text-align: center;
+  vertical-align: middle;
+  color: #61122f;
+}
+#nav-list a:hover {
+  background: #e7e7e7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#phone {
+  margin-top: 5px;
+
+}
+#phone a {/*phone num*/
+  padding-bottom: 0;
+  text-align: right;
+}
+#phone div {/*we deliveer*/
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {/*navbar collapse icon*/
+  border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -35px;
+}
