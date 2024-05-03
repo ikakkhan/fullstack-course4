@@ -88,7 +88,7 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   vertical-align: middle;
-  border: #e7e7e7 solid 1px;
+  border: #e7e7e7 solid 2px;
   border-radius: 6px;
 }
 #call-button a{
@@ -176,6 +176,32 @@ footer.panel-footer {
   margin-top: 25px;
 }
 
+.category-tile {/*menu page main content*/
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+.category-tile span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #000;
+  opacity: 0.8;
+}
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
 /* large width */
 @media (min-width: 1200px) {
   #main-content .jumbotron {
