@@ -1,8 +1,12 @@
-// Default values
-function orderChickenWith(sideDish) {
-  sideDish = sideDish || "whatever!";
-  console.log("Chicken with " + sideDish);
+function orderchickenwith(menu) {
+  // if (menu == null || menu == undefined) {
+  //   menu = "chicken";
+  // }
+ 
+  menu = menu || "chicken";
+
+  console.log("Chicken with " + menu);
 }
 
-orderChickenWith("noodles");
-orderChickenWith();
+orderchickenwith("noodles");
+orderchickenwith();
