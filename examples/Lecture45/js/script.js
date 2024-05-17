@@ -1,39 +1,33 @@
-// Object creation
-var company = new Object();
-company.name = "Facebook";
-company.ceo = new Object();
-company.ceo.firstName = "Mark";
-company.ceo.favColor = "blue";
+// var company = new Object();
+// company.name = "Youtube";
+// company.ceo = new Object();
+// company.ceo.Firstname = "Khan";
+// company.ceo.favcolor = "blue";
 
-console.log(company);
-console.log("Company CEO name is: " 
-  + company.ceo.firstName);
+// console.log(company);
+// console.log("CEO favorite color is : " + company.ceo.favcolor);
 
-console.log(company["name"]);
-var stockPropName = "stock of company";
-company[stockPropName] = 110;
+// console.log(company.name);
+// console.log(company["name"]);
 
-console.log("Stock price is: " + 
-  company[stockPropName]);
+// var stockpropname = "stock of the company";
+// company[stockpropname] = 110;
+// console.log("Stock of company is : " + company["stock of the company"]);
+// company.stockpropname = 120;
+// console.log("Stock of company is : " + company[stockpropname]);
 
-// Better way: object literal
+//object literal
+var stockpropname = "stock of the company";
 var facebook = {
-  name: "Facebook",
+  name: "Facebook", 
   ceo: {
-    firstName: "Mark",
-    favColor: "blue"
-  },
-  "stock of company": 110
+    Firstname: "Mark", 
+    favcolor: "blue"
+  }, 
+  stockpropname: 110
 };
 
-console.log(facebook.ceo.firstName);
-
-
-
-
-
-
-
-
-
-
+console.log(facebook);
+console.log(facebook.stockpropname);
+console.log(facebook["stockpropname"]);
+console.log(facebook["stock of the company"]);
