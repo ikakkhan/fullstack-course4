@@ -30,4 +30,3 @@ var facebook = {
 console.log(facebook);
 console.log(facebook.stockpropname);
 console.log(facebook["stockpropname"]);
-console.log(facebook["stock of the company"]);
