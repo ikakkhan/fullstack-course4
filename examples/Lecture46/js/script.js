@@ -3,42 +3,36 @@
 function multiply(x, y) {
   return x * y;
 }
+
+// var result = multiply(2, 3);
+// console.log(result);
+// console.log(multiply(4, 5));
+
 multiply.version = "v.1.0.0";
 console.log(multiply.version);
 
 
-// Function factory
-function makeMultiplier(multiplier) {
-  var myFunc = function (x) {
+// function factory
+function makemultiplier(multiplier) {
+  var myfunc = function (x) {
     return multiplier * x;
   };
-
-  return myFunc;
+  return myfunc;
 }
 
-var multiplyBy3 = makeMultiplier(3);
-console.log(multiplyBy3(10));
-var doubleAll = makeMultiplier(2);
-console.log(doubleAll(100));
+var multiply3 = makemultiplier(3);
+console.log(multiply3(6));
+var multiply7 = makemultiplier(7);
+console.log(multiply7(7));
 
 
-
-// Passing functions as arguments
-function doOperationOn(x, operation) {
+// passing function as argument
+function Operation(x, operation) {
   return operation(x);
 }
 
-var result = doOperationOn(5, multiplyBy3);
+var result = Operation(5, makemultiplier(20));
 console.log(result);
-result = doOperationOn(100, doubleAll);
-console.log(result);
-
-
-
-
-
-
-
-
+console.log(Operation(6, makemultiplier(5)));
 
 
